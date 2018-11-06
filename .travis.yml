@@ -13,8 +13,8 @@ script:
     yum install -y epel-release && yum install -y bzip2 gcc-c++ git gettext make python-pip 
     curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
     yum install -y nodejs
-    git clone git@github.com:ansible/awx.git
+    git clone https://github.com/ansible/awx.git 
     cd awx
-    git clone git@github.com:ansible/awx-logos.git
+    git clone https://github.com/ansible/awx-logos.git 
     make sdist
     EOF
